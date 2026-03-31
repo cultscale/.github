@@ -1,0 +1,8 @@
+{
+  "name": "Default self-hosted workflow",
+  "description": "Run jobs on Cultscale's default self-hosted GitHub Actions runner.",
+  "iconName": "default-self-hosted.svg",
+  "categories": [
+    "Automation"
+  ]
+}

@@ -1,0 +1,17 @@
+name: Default self-hosted workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  default-self-hosted:
+    runs-on: ${{ fromJSON(vars.DEFAULT_RUNS_ON_JSON) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show selected runner
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner arch: $RUNNER_ARCH"
+          echo "Workspace: $GITHUB_WORKSPACE"
